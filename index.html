@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+ <nav class="navbar">
+  <ul class="nav-left">
+    <li><a href="#home" class="nav-link">Home</a></li>
+    <li><a href="#vlog" class="nav-link">Blog</a></li>
+    <li><a href="#services" class="nav-link">Services</a></li>
+  </ul>
+  
+  <div class="brand">JAHANGIR</div>
+  
+  <ul class="nav-right">
+    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+    <li><a href="#skills" class="nav-link">Skills</a></li>
+    <li><a href="#education" class="nav-link">Education</a></li>
+    <li><a href="#about" class="nav-link">About</a></li>
+    <li><a href="#contacts" class="nav-link">Contacts</a></li>
+  </ul>
+</nav>
+
+
+<header class="hero">
+  <div class="hero-content">
+    <h1>HELLO</h1>
+    <h2>I AM <span id="typedName"></span></h2>
+
+    <form class="resume-form" id="resumeForm">
+      <input type="email" placeholder="Email" required />
+      <button type="submit" id="getResumeBtn">GET MY RESUME</button>
+    </form>
+    <small>* Get my resume directly in your mailbox</small>
+
+    <!-- THIS MUST BE INCLUDED -->
+    <div id="pdfContainer" style="display:none;">
+      <h3>Your Resume:</h3>
+      <iframe id="resumeIframe" src="Images/JAHANGIR_HUSSEN_Resume (1).pdf" width="100%" height="500px"></iframe>
+    </div>
+  </div>
+</header>
+
+
+
+
+<section class="services-section" id="services">
+  <div class="container">
+    <h3 class="subheading">MY SERVICES</h3>
+    <h2 class="heading">DESIGNED WITH CARE,<br>FILLED WITH CREATIVE ELEMENTS.</h2>
+    <div class="services-grid">
+
+      <!-- ✅ Machine Learning Model Development -->
+      <div class="service-box" data-aos="fade-up" data-aos-delay="100">
+        <div class="card-content">
+          <img src="Images/deployment.jpg" alt="Images" />
+          <h4>Machine Learning Models</h4>
+          <p>Classification, regression, clustering – from training to deployment.</p>
+        </div>
+        <div class="overlay"></div>
+      </div>
+
+      <!-- ✅ AI Game Development -->
+      <div class="service-box" data-aos="fade-up" data-aos-delay="200">
+        <div class="card-content">
+          <img src="Images/AI.jpg" alt="Images" />
+          <h4>AI-Based Game Development</h4>
+          <p>Games with AI logic (like Minimax) using Python & Pygame.</p>
+        </div>
+        <div class="overlay"></div>
+      </div>
+
+      <!-- ⏳ Chatbot Development -->
+      <div class="service-box coming-soon" data-aos="fade-up" data-aos-delay="300">
+        <div class="card-content">
+          <img src="Images/chatbot4.jpg" alt="Images" />
+          <h4>Chatbot Development <span class="tag">Coming Soon</span></h4>
+          <p>Interactive bots with NLP for websites or apps.</p>
+        </div>
+        <div class="overlay"></div>
+      </div>
+
+      <!-- ⏳ Python Automation -->
+      <div class="service-box coming-soon" data-aos="fade-up" data-aos-delay="400">
+        <div class="card-content">
+          <img src="Images/python.jpg" alt="Images" />
+          <h4>Python Automation Scripts <span class="tag">Coming Soon</span></h4>
+          <p>Custom scripts for task automation and workflow boosting.</p>
+        </div>
+        <div class="overlay"></div>
+      </div>
+
+      <!-- ⏳ Computer Vision -->
+      <div class="service-box coming-soon" data-aos="fade-up" data-aos-delay="500">
+        <div class="card-content">
+          <img src="Images/vision.jpg" alt="Images" />
+          <h4>Computer Vision Projects <span class="tag">Coming Soon</span></h4>
+          <p>Image/video processing using OpenCV and AI models.</p>
+        </div>
+        <div class="overlay"></div>
+      </div>
+
+      <!-- ⏳ Neural Networks -->
+      <div class="service-box coming-soon" data-aos="fade-up" data-aos-delay="600">
+        <div class="card-content">
+          <img src="Images/netual0.jpg" alt="Images" />
+          <h4>Neural Network Projects <span class="tag">Coming Soon</span></h4>
+          <p>Deep learning solutions with TensorFlow or PyTorch.</p>
+        </div>
+        <div class="overlay"></div>
+      </div>
+
+      <!-- ⏳ GitHub Setup -->
+      <div class="service-box coming-soon" data-aos="fade-up" data-aos-delay="700">
+        <div class="card-content">
+          <img src="Images/git1.jpg" alt="Images" />
+          <h4>GitHub Project Setup <span class="tag">Coming Soon</span></h4>
+          <p>Repo creation, README writing, version control setup.</p>
+        </div>
+        <div class="overlay"></div>
+      </div>
+
+      <!-- ⏳ Arduino & IoT -->
+      <div class="service-box coming-soon" data-aos="fade-up" data-aos-delay="800">
+        <div class="card-content">
+          <img src="Images/iot.jpg" alt="Images" />
+          <h4>Arduino & IoT Prototyping <span class="tag">Coming Soon</span></h4>
+          <p>Smart solutions using sensors, actuators, and microcontrollers.</p>
+        </div>
+        <div class="overlay"></div>
+      </div>
+
+      <!-- ⏳ Web Design & Dev -->
+      <div class="service-box coming-soon" data-aos="fade-up" data-aos-delay="900">
+        <div class="card-content">
+          <img src="Images/webdesign.jpg" alt="Images" />
+          <h4>Web Design & Development <span class="tag">Coming Soon</span></h4>
+          <p>Frontend and backend projects – portfolios, dashboards, landing pages.</p>
+        </div>
+        <div class="overlay"></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+  <!-- My Projects -->
+<section id="my-projects" class="portfolio-section" data-aos="fade-up">
+  <div class="container">
+    <h5 class="section-subtitle" data-aos="fade-down">MY PROJECTS</h5>
+    <h2 data-aos="fade-up" data-aos-delay="100">
+      I CREATE THE BEST PRODUCT QUALITY AND I AM BEST AT THIS.
+    </h2>
+  </div>
+
+  <div class="portfolio-items">
+    <!-- Pygame Project -->
+    <div class="portfolio-item" data-aos="zoom-in" data-aos-delay="100">
+      <img src="Images/wify.jpg" alt="Pygame Project">
+      <div class="portfolio-content">
+        <h3>Pygame Project</h3>
+        <p class="category">Wi-Fi Deauther</p>
+        <p class="description">A network security project designed to disrupt and test the vulnerability of Wi-Fi networks by launching various attacks like Wi-Fi jamming, password hacking, brute force attacks, and beacon flooding. It is primarily built to assess the security measures of Wi-Fi networks and to enhance the understanding of cybersecurity.</p>
+        <a href=" https://youtu.be/QScTamkDT70?si=hZjP-rRouPStSXyH" target="_blank">Watch on YouTube</a>
+      </div>
+    </div>
+
+    <!-- University Project -->
+    <div class="portfolio-item" data-aos="zoom-in" data-aos-delay="200">
+      <img src="Images/train.jpg" alt="University Project">
+      <div class="portfolio-content">
+        <h3>University Project</h3>
+        <p class="category">Train-Activated Automatic Road Block</p>
+        <p class="description">This project aims to automatically activate a road block when a train approaches a railway crossing. The system uses sensors to detect the presence of a train and automatically closes the road block, ensuring safety and preventing accidents at railway crossings. Once the train passes, the road block automatically opens..</p>
+        <a href="https://youtube.com/shorts/PkCTtvkmNoY?si=BGZbgl_5klgoL-Np" target="_blank">Watch on YouTube</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+  
+  <!-- skill -->
+
+  <section id="skills" class="skills-section">
+    <h2 class="section-title">My Skills</h2>
+    <div class="skills-container">
+      <!-- Skill Cards -->
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+        <p>Python</p>
+      </div>
+      <div class="skill-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/NumPy_logo_2020.svg" alt="NumPy">
+        <p>NumPy</p>
+      </div>
+      <div class="skill-card">
+        <img src="https://scikit-learn.org/stable/_static/scikit-learn-logo-small.png" alt="Scikit-learn">
+        <p>Scikit-learn</p>
+      </div>
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+        <p>Java</p>
+      </div>
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C">
+        <p>C</p>
+      </div>
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++">
+        <p>C++</p>
+      </div>
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+        <p>HTML</p>
+      </div>
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+        <p>JavaScript</p>
+      </div>
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django">
+        <p>Django</p>
+      </div>
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL">
+        <p>SQL</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- education -->
+  <section id="education" class="education-section">
+    <h2 class="section-title">My Education</h2>
+  
+    <!-- Higher Secondary Certificate (HSC) -->
+   <!-- Higher Secondary Certificate (HSC) -->
+<div class="timeline-content" id="hsc-timeline">
+  <div class="icon">
+    <i class="fas fa-graduation-cap"></i>
+  </div>
+  <div class="text">
+    <h3>Higher Secondary Certificate (HSC)</h3>
+    <span class="date">Year: 2020</span>
+    <p class="institution-name">College: <strong>Imperial College Moulivibazar</strong></p>
+    <p class="description">Completed my HSC with a focus on science and technology, gaining essential problem-solving skills.</p>
+    <p>GPA:4.25/5.00</p>
+  </div>
+</div>
+
+<!-- Bachelor's Degree -->
+<div class="timeline-content" id="bachelors-timeline">
+  <div class="icon">
+    <i class="fas fa-graduation-cap"></i>
+  </div>
+  <div class="text">
+    <h3>Bachelor's Degree in Computer Science & Engineering</h3>
+    <span class="date">Year: 2025</span>
+    <p class="institution-name">University: <strong>Sonargaon University</strong></p>
+    <p class="description">Graduated with a degree in Computer Science and Engineering, specializing in web development and machine learning.</p>
+    <p> CGPA: 3.75/4.00</p>
+  </div>
+</div>
+
+  </section>
+
+
+  <!-- achievement -->
+  <!-- Achievement Section Wrapper -->
+<div class="scroll-wrapper">
+  <div class="container">
+    <!-- Coding Platforms -->
+    <section id="coding-platforms" class="scroll-section">
+      <h2>Competitive Programming & Coding Platforms</h2>
+      <div class="card">
+        <p><strong>LeetCode</strong>: Rank: 400,000 | Rating: 1,417<br>Profile: jahangirhussen</p>
+      </div>
+      <div class="card">
+        <p><strong>Codeforces</strong>: Rating: 837<br>Profile: jahangirhussen5011</p>
+      </div>
+      <div class="card">
+        <p><strong>CodeChef</strong>: Rating: 1,407<br>Profile: jahangirhussen</p>
+      </div>
+      <div class="card">
+        <p><strong>Kaggle</strong>: Machine Learning Competitions<br>Profile: jahangirhussen</p>
+      </div>
+    </section>
+
+    <!-- Achievements -->
+    <section id="achievements" class="scroll-section">
+      <h2>Achievements</h2>
+      <ul>
+        <li><strong>2024:</strong> 360/2500, ICPC (Bangladesh)</li>
+        <li><strong>2023:</strong> 1170/2500, ICPC (Bangladesh)</li>
+      </ul>
+    </section>
+
+    <!-- Publications -->
+    <section id="publications" class="scroll-section">
+      <h2>Publications</h2>
+      <div class="card">
+        <p><strong>Defending Digital Discourse</strong><br>
+          Jahangir Hussen, Naimul Hasan Shadesh, Zannatul Ferdous<br>
+          <em>International Journal of Computer Science and Engineering</em>, vol. 11, no. 10, pp. 104–112, 2024.
+        </p>
+      </div>
+    </section>
+  </div> <!-- end container -->
+</div> <!-- end scroll-wrapper -->
+
+
+  <!-- my vlog -->
+  
+  <section id="vlog" class="vlog-section">
+    <h2 class="section-title">My Vlog</h2>
+    <p class="section-subtitle">Some of my recent creative works</p>
+  
+    <div class="vlog-grid">
+        <div class="vlog-item" data-img="project1-large.jpg">
+            <img src="Images/work2.png" alt="Images">
+            <div class="overlay">View Project</div>
+        </div>
+        <div class="vlog-item" data-img="project2-large.jpg">
+            <img src="Images/Card(2).png" alt="Images">
+            <div class="overlay">View Project</div>
+        </div>
+        <div class="vlog-item" data-img="project3-large.jpg">
+            <img src="Images/casestudy.png" alt="Images">
+            <div class="overlay">View Project</div>
+        </div>
+        <div class="vlog-item" data-img="project4-large.jpg">
+            <img src="Images/Illustration copy.png" alt="Images">
+            <div class="overlay">View Project</div>
+        </div>
+    </div>
+  
+    <!-- Modal for image popup -->
+    <div id="imageModal" class="image-modal">
+        <span class="close">&times;</span>
+        <img id="modalImg" src="" alt="Project View">
+    </div>
+</section>
+
+
+
+<!-- about -->
+<section id="about" class="about-section">
+  <div class="container">
+    <h2 class="section-title">About Me</h2>
+    <p class="section-subtitle" data-aos="fade-left">A brief story about who I am and what I do</p>
+    <div class="about-content">
+      <img src="Images/kawsar.jpeg" alt="My Photo" class="Image" />
+      <div class="about-text">
+        <p>A passionate researcher and programmer from Bangladesh, specializing in Machine Learning, Data Science, and competitive programming (LeetCode, Codeforces, CodeChef)</p>
+        <p>With a background in both graphic and UI/UX design, I bring a versatile approach to building modern and engaging websites. Let's make something amazing together!</p>
+      </div>
+    </div>
+
+    <!-- Hobbies Section -->
+    <div class="hobbies-section">
+      <h3 class="hobbies-title">My Hobbies</h3>
+      <p class="hobbies-description">Apart from web design, I love to explore new things. Here are a few things I enjoy doing in my free time:</p>
+      <div class="hobbies-list">
+        <div class="hobby-item">
+          <i class="fas fa-code"></i> <!-- Icon for Coding -->
+          <p>Coding and experimenting with new technologies</p>
+        </div>
+        <div class="hobby-item">
+          <i class="fas fa-paint-brush"></i> <!-- Icon for Art -->
+          <p>Sketching and digital artwork</p>
+        </div>
+        <div class="hobby-item">
+          <i class="fas fa-camera"></i> <!-- Icon for Photography -->
+          <p>Photography and capturing moments</p>
+        </div>
+        <div class="hobby-item">
+          <i class="fas fa-book"></i> <!-- Icon for Reading -->
+          <p>Reading books about design and development</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!--  -->
+
+
+<section id="skills-and-experience" class="skills-experience-section">
+  <div class="container">
+    <h2 class="section-title">My Skills & Experience</h2>
+    
+    <!-- Progress Bars for Skills -->
+    <div class="skills-progress">
+      <h3>Skills</h3>
+    
+      <div class="progress-bar">
+        <label for="ml">Machine Learning</label>
+        <div class="progress">
+          <div class="progress-fill" id="ml-progress"></div>
+        </div>
+        <span id="ml-percent">70%</span>
+      </div>
+    
+      <div class="progress-bar">
+        <label for="ds">Data Science</label>
+        <div class="progress">
+          <div class="progress-fill" id="ds-progress"></div>
+        </div>
+        <span id="ds-percent">60%</span>
+      </div>
+    
+      <div class="progress-bar">
+        <label for="programming">Programming</label>
+        <div class="progress">
+          <div class="progress-fill" id="programming-progress"></div>
+        </div>
+        <span id="programming-percent">90%</span>
+      </div>
+    </div>
+    
+
+    <!-- Experience Slider -->
+    <div class="experience-slider">
+      <h3>Experience</h3>
+      <input type="range" id="experienceRange" min="1" max="5" step="1" value="1" class="slider">
+      <p class="slider-output">Year: <span id="slider-value">2023</span></p>
+      <div class="experience-details">
+        <p id="experience-description">Started my journey with a basic understanding of web development.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- contacts -->
+<section id="contacts" class="contacts-section">
+  <div class="container">
+    <h2 class="section-title">Get In Touch</h2>
+    <p class="section-subtitle">Feel free to reach out for collaborations or just a friendly hello 👋</p>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+  
+
+  <script src="js/main.js" ></script>
